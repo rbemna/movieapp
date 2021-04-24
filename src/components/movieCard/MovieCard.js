@@ -24,28 +24,12 @@ const MovieCard = ({ movieCard }) => {
           <div className="movie_top">
             <h1>{movieCard.title}</h1>
             <span>
+              {movieCard.rating}
               {[...Array(5)].map((star, i) => {
                 return i + 1 <= movieCard.rating ? (
-                  <FaStar
-                    key={i}
-                    className="star"
-                    color={"#ffc107"}
-                    size={25}
-                  />
+                  <FaStar key={i + 1} color={"#ffc107"} size={25} />
                 ) : (
-                  <FaStar
-                    key={i}
-                    className="star"
-                    color={
-                      <FaStar
-                        key={i + 1}
-                        className="star"
-                        color={"#e4e5e9"}
-                        size={25}
-                      />
-                    }
-                    size={25}
-                  />
+                  <FaStar key={i} color={"#e4e5e9"} size={25} />
                 );
               })}
             </span>

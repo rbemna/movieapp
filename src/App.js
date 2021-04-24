@@ -5,12 +5,11 @@ import MovieList from "./components/movieList/MovieList";
 import Add from "./components/movieAdd/Add";
 import { Navbar, Nav, Form } from "react-bootstrap";
 import Search from "./components/movieSearch/Search";
-// import Rating from "./components/rating/Rating";
 
 function App() {
   const [moviesData, setMoviesData] = useState(movies);
   const [search, setSearch] = useState("");
-  // const [rating, setRating] = useState(null);
+  const [rating, setRating] = useState(0);
   const handleAdd = (newMovie) => {
     setMoviesData([...movies, newMovie]);
   };
@@ -21,10 +20,10 @@ function App() {
           <Add handleAdd={handleAdd} />
         </Nav>
         <Form inline>
-          <Search setSearch={setSearch} />
+          <Search setSearch={setSearch} setRating={setRating} />
         </Form>
       </Navbar>
-      <MovieList moviesData={moviesData} search={search} />
+      <MovieList moviesData={moviesData} search={search} rating={rating} />
     </div>
   );
 }
