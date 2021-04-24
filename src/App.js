@@ -5,11 +5,12 @@ import MovieList from "./components/movieList/MovieList";
 import Add from "./components/movieAdd/Add";
 import { Navbar, Nav, Form } from "react-bootstrap";
 import Search from "./components/movieSearch/Search";
-import Rating from "./components/rating/Rating";
+// import Rating from "./components/rating/Rating";
 
 function App() {
   const [moviesData, setMoviesData] = useState(movies);
   const [search, setSearch] = useState("");
+  // const [rating, setRating] = useState(null);
   const handleAdd = (newMovie) => {
     setMoviesData([...movies, newMovie]);
   };
