@@ -4,7 +4,6 @@ import "./MovieList.css";
 
 const MovieList = ({ moviesData, search }) => {
   return (
-    //  ||
     <div className="moviesList">
       {moviesData
         .filter(
