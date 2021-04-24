@@ -9,7 +9,7 @@ import Search from "./components/movieSearch/Search";
 function App() {
   const [moviesData, setMoviesData] = useState(movies);
   const [search, setSearch] = useState("");
-  const [rating, setRating] = useState(0);
+  // const [rating, setRating] = useState(0);
   const handleAdd = (newMovie) => {
     setMoviesData([...movies, newMovie]);
   };
@@ -20,10 +20,10 @@ function App() {
           <Add handleAdd={handleAdd} />
         </Nav>
         <Form inline>
-          <Search setSearch={setSearch} setRating={setRating} />
+          <Search setSearch={setSearch} />
         </Form>
       </Navbar>
-      <MovieList moviesData={moviesData} search={search} rating={rating} />
+      <MovieList moviesData={moviesData} search={search} />
     </div>
   );
 }

@@ -1,19 +1,8 @@
 import React from "react";
-import Rating from "../rating/Rating";
 import "./MovieCard.css";
 import { FaStar } from "react-icons/fa";
 
 const MovieCard = ({ movieCard }) => {
-  const arr = [5];
-  const r = movieCard.rating;
-  const rate = (r) => {
-    if (movieCard.rating <= arr.length) {
-      for (let i = 1; i <= movieCard.rating; i++) {
-        return <FaStar color={"#ffc107"} />;
-      }
-    }
-  };
-
   return (
     <div className="movie">
       <div className="img_section">
@@ -24,7 +13,6 @@ const MovieCard = ({ movieCard }) => {
           <div className="movie_top">
             <h1>{movieCard.title}</h1>
             <span>
-              {movieCard.rating}
               {[...Array(5)].map((star, i) => {
                 return i + 1 <= movieCard.rating ? (
                   <FaStar key={i + 1} color={"#ffc107"} size={25} />
