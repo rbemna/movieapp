@@ -17,7 +17,7 @@ const MovieCard = ({ movieCard }) => {
                 return i + 1 <= movieCard.rating ? (
                   <FaStar key={i + 1} color={"#ffc107"} size={25} />
                 ) : (
-                  <FaStar key={i} color={"#e4e5e9"} size={25} />
+                  <FaStar key={i + 1} color={"#e4e5e9"} size={25} />
                 );
               })}
             </span>

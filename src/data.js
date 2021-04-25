@@ -29,4 +29,13 @@ export const movies = [
     description:
       "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room. A little boy named Andy loves to be in his room, playing with his toys, especially his doll named Woody. But, what do the toys do when Andy is not with them, they come to life.",
   },
+  {
+    title: "Minions",
+    date: "2010",
+    duration: "90 min",
+    URL: "https://fr.web.img6.acsta.net/pictures/20/02/03/09/30/4865530.jpg",
+    rating: 5,
+    description:
+      "Minions are a species of tiny yellow henchmen; they look like unusually dressed Mike and Ike candies. They're earnestly driven by the desire to serve an evil boss, though they often screw up because they're selfish, easily distracted, and generally inept.",
+  },
 ];

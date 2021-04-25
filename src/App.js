@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { movies } from "./data";
 import MovieList from "./components/movieList/MovieList";
 import Add from "./components/movieAdd/Add";
-import { Navbar, Nav, Form } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import Search from "./components/movieSearch/Search";
 import Rating from "./components/rating/Rating";
 
@@ -20,12 +20,8 @@ function App() {
         <Nav className="mr-auto">
           <Add handleAdd={handleAdd} />
         </Nav>
-        <Form clasName="form">
-          <span>
-            <Rating setRating={setRating} rating={rating} />
-          </span>
-          <Search setSearch={setSearch} />
-        </Form>
+        <Rating setRating={setRating} rating={rating} />
+        <Search setSearch={setSearch} />
       </Navbar>
       <MovieList moviesData={moviesData} search={search} rating={rating} />
     </div>
