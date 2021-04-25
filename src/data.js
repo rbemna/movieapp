@@ -25,7 +25,7 @@ export const movies = [
     duration: "90 min",
     URL:
       "https://www.nutscomputergraphics.com/wp-content/uploads/2018/04/Toy-story-movie-posters-4.jpg",
-    rating: 4,
+    rating: 2,
     description:
       "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room. A little boy named Andy loves to be in his room, playing with his toys, especially his doll named Woody. But, what do the toys do when Andy is not with them, they come to life.",
   },
